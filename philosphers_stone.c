@@ -3,11 +3,17 @@
 
 
 /*
-This problem is a simple application of Dynamic Programming. We are asked to find the maximum number of stones that Harry can pick up. 
+This problem is a simple application of Dynamic Programming. We are asked to find the maximum number of stones 
+that Harry can pick up. 
 The idea:
-	Suppose that we need to find the number of stones to be picked up in the current position (i,j), i.e., we have already computed number of stones picked up so far (up to row i-1). 
-	The current position is (i,j). When we were in the previous row (i-1), the column elements that could access the current column (j) are j-1, j and j+1. 
-	Let us call the given array of numbers as A. Create another array B where we store the cumulative sum of stones collected for every row. Initially, fill the first row of array B with the elements of first row of array A. After that, loop over array B to find all the entries. For a given position (i,j), B(i,j) is the sum of A(i,j) and the maximum of B(i-1,j-1), B(i-1,j) and B(i-1,j+1).
+	Suppose that we need to find the number of stones to be picked up in the current position (i,j), i.e., we 
+	have already computed number of stones picked up so far (up to row i-1). The current position is (i,j). 
+	When we were in the previous row (i-1), the column elements that could access the current column (j) are 
+	j-1, j and j+1. Let us call the given array of numbers as A. Create another array B where we store the 
+	cumulative sum of stones collected for every row. Initially, fill the first row of array B with the 
+	elements of first row of array A. After that, loop over array B to find all the entries. For a given 
+	position (i,j), B(i,j) is the sum of A(i,j) and the maximum of B(i-1,j-1), B(i-1,j) and B(i-1,j+1).
+	
 	for j=0 to (No_of_columns)
 		B[0][j]=A[0][j]
 	for i=1 to (No_of_rows)
@@ -18,8 +24,9 @@ The idea:
 for i=1 to (No_of_columns)
 		if ( maximum > B[t-1][i] )
 			maximum= B[t-1][i]
-t is the number of rows. Since array index starts from 0, (t-1) refers to the last row. ‘Maximum’ is the max number of stones picked up.
-Since it is the cumulative sum, the maximum number of stones picked up is biggest element in the last row of array B. 
+t is the number of rows. Since array index starts from 0, (t-1) refers to the last row. ï¿½Maximumï¿½ is the max 
+umber of stones picked up.Since it is the cumulative sum, the maximum number of stones picked up is 
+biggest element in the last row of array B. 
 */
 #include<stdio.h>
 #include<stdlib.h>
