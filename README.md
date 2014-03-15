@@ -1,3 +1,3 @@
 spoj-solutions
 ==============
-it contains some of the spoj problems solved by me.
+this repo contains some of the spoj problems solved by me.
