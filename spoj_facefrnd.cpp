@@ -1,3 +1,9 @@
+/*
+problem code : FACEFRND
+problem number : 9788
+problem link : http://www.spoj.com/problems/FACEFRND/
+*/
+
 #include<cstdio>
 #include<cstdlib>
 #include<cctype>
@@ -18,47 +24,43 @@
 
 using namespace std;
 
-//#define for(i, n) for( int i=0; i<n; i++ );
-
 set<int> b;
 set<int> ans;
 
 int main()
 {
-    int m,n, temp;
-    scanf( "%d", &n );
+  int m,n, temp;
+  scanf( "%d", &n );
 
-    vector<int> v[n];
+  vector<int> v[n];
 
-    for( int i =0; i<n; i++ )
+  for( int i =0; i<n; i++ )
+  {
+    scanf( "%d", &temp );
+    b.insert(temp);
+
+    scanf( "%d", &m );
+
+    for( int j=0; j<m; j++ )
     {
       scanf( "%d", &temp );
-      b.insert(temp);
-
-      scanf( "%d", &m );
-
-      for( int j=0; j<m; j++ )
-      {
-        scanf( "%d", &temp );
-        v[i].push_back(temp);
-      }
+      v[i].push_back(temp);
     }
+  }
 
-    for( int i=0; i<n; i++ )
+  for( int i=0; i<n; i++ )
+  {
+    temp= v[i].size();
+
+    for( int j = 0; j<temp; j++ )
     {
-      temp= v[i].size();
-
-      for( int j = 0; j<temp; j++ )
+      if(b.find(v[i][j]) == b.end() )
       {
-        if(b.find(v[i][j]) == b.end() )
-        {
-          ans.insert(v[i][j]);
-        }
+        ans.insert(v[i][j]);
       }
     }
-    printf("%d\n", ans.size());
-
-
+  }
+  printf("%d\n", ans.size());
 
   return 0;
 }
