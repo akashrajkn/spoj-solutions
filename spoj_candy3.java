@@ -1,3 +1,9 @@
+/*
+problem code: CANDY3
+problem number: 2148
+problem link: http://www.spoj.com/problems/CANDY3/
+*/
+
 import java.math.*;
 import java.io.*;
 import java.util.*;
