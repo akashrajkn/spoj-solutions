@@ -1,3 +1,9 @@
+/*
+problem code: ACPC10A
+problem number: 7974
+problem link: http://www.spoj.com/problems/ACPC10A/
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
