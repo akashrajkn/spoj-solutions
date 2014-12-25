@@ -1,0 +1,20 @@
+
+
+ - horrible:8002
+   - binary indexed trees
+   - segment trees
+
+ - ppath:1841
+   - breadth first search
+
+ - philosopher's stone:
+   - dynamic programming (2d)
+
+ - miserman:
+   - dynamic programming (2d) - same as philosopher's stone
+
+ - alicesie:1961
+   - ad hoc
+
+ - mcoins:3885
+   - dp, adhoc
