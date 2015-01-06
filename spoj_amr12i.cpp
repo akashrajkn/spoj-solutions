@@ -1,7 +1,7 @@
 /*
-  problem code: AMR12B
-  problem number: 13042
-  problem link: http://www.spoj.com/problems/AMR12B/
+  problem code: AMR12I
+  problem number: 13047
+  problem link: http://www.spoj.com/problems/AMR12I/
 */
 
 #include<cstdio>
