@@ -18,3 +18,15 @@
 
  - mcoins:3885
    - dp, adhoc
+
+ - gss1:1043
+   - segment trees (only querying)
+
+ - gss3:1716
+   - segment trees (updation and querying)
+
+ - brckts:61
+   - segment trees
+
+ - kgss:3693
+   - segment tree  
