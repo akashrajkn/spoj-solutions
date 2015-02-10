@@ -162,14 +162,7 @@ void dfs(int u, int rank)
   {
     v = graph[u][i];
 
-    if (!visited[v]) //not visited
-    {
-      dfs(v, 1 + bully[u]);
-    }
-    else //already visited
-    {
-      dfs(v, bully[u] + 1);
-    }
+    dfs(v, 1 + bully[u]);
   }
 
 }
