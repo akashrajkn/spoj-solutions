@@ -1,7 +1,7 @@
 /*
-problem code: ENIGMATH
-problem number: 15965
-problem link: http://www.spoj.com/problems/ENIGMATH/
+problem code: RRSCHED
+problem number: 2826
+problem link: http://www.spoj.com/problems/RRSCHED/
 */
 
 #include<cstdio>
