@@ -74,11 +74,15 @@ int max(int a, int b)
 }
 
 
-int lcs(vector<int> &a, vector<int> &b);
+int lcs(vector<int> &a, vector<int> &b); //longest common subsequence
 
 
 int main()
 {
+  /*
+      dynamic programming, longest common subsequence, O(mn) solution implemented
+  */
+
   int t, checkpoint;
   int maxCheckpoints; //max number of checkpoints coniciding
 
@@ -92,7 +96,7 @@ int main()
     while (1) //get input for agnes route card
     {
       getInt(checkpoint);
-      if (checkpoint == 0)
+      if (checkpoint == 0) //current route ends
       {
         break;
       }
@@ -105,7 +109,7 @@ int main()
       while (1) //each route
       {
         getInt(checkpoint);
-        if (checkpoint == 0)
+        if (checkpoint == 0) //current route ends
         {
           break;
         }
@@ -117,7 +121,7 @@ int main()
       }
 
       //process tom's present route and check with agnes' route
-      maxCheckpoints = max(maxCheckpoints, lcs(agnes, tom));
+      maxCheckpoints = max(maxCheckpoints, lcs(agnes, tom)); //max number of coinciding checkpoints
     }
 
     printf("%d\n", maxCheckpoints);
@@ -134,7 +138,7 @@ int lcs(vector<int> &agnes, vector<int> &tom)
   m = agnes.size();
   n = tom.size();
 
-  int dp[m + 1][n + 1];
+  int dp[m + 1][n + 1]; //dp array
 
   rep(i, m+1)
   {
