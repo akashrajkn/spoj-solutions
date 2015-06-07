@@ -1,7 +1,7 @@
 /*
-problem code: The Next Palindrome
-problem number: 5
-problem link: http://www.spoj.com/problems/PALIN/
+  problem code: The Next Palindrome
+  problem number: 5
+  problem link: http://www.spoj.com/problems/PALIN/
 */
 
 #include<cstdio>
